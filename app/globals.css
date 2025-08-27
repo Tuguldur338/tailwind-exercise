@@ -10,6 +10,55 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Neon Colors */
+  --color-neon-pink: #ff0080;
+  --color-neon-pink-light: #ff33a1;
+  --color-neon-pink-dark: #cc0066;
+  
+  --color-neon-blue: #00d4ff;
+  --color-neon-blue-light: #33ddff;
+  --color-neon-blue-dark: #0099cc;
+  
+  --color-neon-green: #00ff41;
+  --color-neon-green-light: #33ff61;
+  --color-neon-green-dark: #00cc34;
+  
+  --color-neon-yellow: #ffff00;
+  --color-neon-yellow-light: #ffff33;
+  --color-neon-yellow-dark: #cccc00;
+  
+  --color-neon-orange: #ff8000;
+  --color-neon-orange-light: #ff9933;
+  --color-neon-orange-dark: #cc6600;
+  
+  --color-neon-purple: #8000ff;
+  --color-neon-purple-light: #9933ff;
+  --color-neon-purple-dark: #6600cc;
+  
+  --color-neon-cyan: #00ffff;
+  --color-neon-cyan-light: #33ffff;
+  --color-neon-cyan-dark: #00cccc;
+  
+  --color-neon-lime: #80ff00;
+  --color-neon-lime-light: #99ff33;
+  --color-neon-lime-dark: #66cc00;
+  
+  --color-neon-magenta: #ff00ff;
+  --color-neon-magenta-light: #ff33ff;
+  --color-neon-magenta-dark: #cc00cc;
+  
+  --color-neon-red: #ff0040;
+  --color-neon-red-light: #ff3366;
+  --color-neon-red-dark: #cc0033;
+  
+  --color-neon-violet: #4000ff;
+  --color-neon-violet-light: #6633ff;
+  --color-neon-violet-dark: #3300cc;
+  
+  --color-neon-turquoise: #40ffff;
+  --color-neon-turquoise-light: #66ffff;
+  --color-neon-turquoise-dark: #33cccc;
 }
 
 @media (prefers-color-scheme: dark) {
