@@ -1,53 +1,113 @@
+import Image from "next/image";
+import { MdOutlineSpeed } from "react-icons/md";
+import { BsCalendar2Event } from "react-icons/bs";
+import { TbChartBarPopular } from "react-icons/tb";
+import { RiArrowLeftRightLine } from "react-icons/ri";
+import { FaRegEnvelope } from "react-icons/fa";
+import { FaRegFolder } from "react-icons/fa";
+import { LuBlocks } from "react-icons/lu";
+import { CiGlobe } from "react-icons/ci";
+import { SlSettings } from "react-icons/sl";
+
 const SideBar = () => {
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="fixed top-0 left-0 h-screen bg-white-800 w-64 shadow-lg flex flex-col">
+      <div className="fixed top-22.5 left-0 h-screen bg-white w-30 shadow-lg flex flex-col rounded-[25] border-[2] border-gray-200 items-center ml-5 mt-10">
         {/* Logo / Header */}
-        <div className="p-6 border-b border-gray-700">
-          <h1 className="text-xl font-bold">My App</h1>
+        <div className="w-[75] h-[80px] border-b-[2.5] border-gray-200 mt-[10px]">
+          <Image
+            src="/images/profile-image.png"
+            alt="profile picture"
+            width={100}
+            height={100}
+            className="mb-[2] p-[3px] rounded-[30px] border-[1px] border-white/10 transition-colors duration-300 hover:border-white"
+          />
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 p-4 space-y-4">
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md hover:bg-gray-700 transition text-gray-800"
-          >
-            Dashboard
-          </a>
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md hover:bg-gray-700 transition text-gray-800"
-          >
-            Profile
-          </a>
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md hover:bg-gray-700 transition text-gray-800"
-          >
-            Settings
-          </a>
-          <a
-            href="#"
-            className="block px-3 py-2 rounded-md hover:bg-gray-700 transition text-gray-800"
-          >
-            Logout
-          </a>
+        <nav className="space-y-4 text-center h-[335px] w-[75px] border-b-[2.5] border-gray-200 mt-[5px]">
+          <div className="flex group">
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <MdOutlineSpeed size={25} />
+            </a>
+
+            <span className="absolute top-[155px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+              Dashboard
+            </span>
+          </div>
+
+          <div className="flex group">
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <BsCalendar2Event size={25} />
+            </a>
+
+            <span className="absolute top-[240px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+              History
+            </span>
+          </div>
+
+          <div className="flex group">
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <TbChartBarPopular size={25} />
+            </a>
+
+            <span className="absolute top-[325px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+              Analysis
+            </span>
+          </div>
+
+          <div className="flex group">
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800  w-[70px] h-[70px]"
+            >
+              <RiArrowLeftRightLine size={25} />
+            </a>
+
+            <span className="absolute top-[410px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+              Finances
+            </span>
+          </div>
         </nav>
 
-        {/* Footer */}
-        <div className="p-4 border-t border-gray-700 text-sm text-gray-800">
-          © 2025 My App
-        </div>
-      </div>
+        <div className="mt-[5px] h-[200px] w-[75px] border-b-2.5 border-gray-200 justify-center">
+          <div>
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <FaRegEnvelope size={25} />
+            </a>
+          </div>
 
-      {/* Content area (to push aside) */}
-      <div className="ml-64 p-6 flex-1">
-        <h2 className="text-2xl font-bold">Main Content</h2>
-        <p className="mt-2 text-gray-600">
-          This is where your page content will go.
-        </p>
+          <div>
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <FaRegFolder size={25} />
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+            >
+              <LuBlocks size={25} />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

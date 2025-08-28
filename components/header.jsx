@@ -5,21 +5,19 @@ import { PiMouseMiddleClickThin } from "react-icons/pi";
 
 const Header = () => {
   return (
-    <header className="bg-gray-300 h-[90px] content-center items-center">
-      <div className="flex justify-between bg-white px-6 rounded-4xl w-[1400px] h-[70px] items-center translate-x-5">
-
+    <header className="bg-gray-100 w-full h-[90px] content-center items-center">
+      <div className="flex justify-between bg-white px-6 rounded-4xl max-w-[2200px] h-[70px] items-center  mx-auto w-full shadow-xl transition-shadow duration-200 hover:shadow-xl/30">
         {/* Banking logo */}
         <div className="ml-5 flex items-center gap-2">
           <a href="http://localhost:3000/">
-            <CiBank 
-            size={40} 
-            className="bg-gray-800 text-neon-yellow p-2 rounded-full shadow-neon-yellow" 
-            aria-label="Banking icon" />
+            <CiBank
+              size={40}
+              className="bg-gray-800 text-neon-yellow p-2 rounded-full shadow-neon-yellow"
+              aria-label="Banking icon"
+            />
           </a>
 
-          <h1 className="text-gray-800 font-extrabold text-lg">
-            Banking
-          </h1>
+          <h1 className="text-gray-800 font-extrabold text-lg">Banking</h1>
         </div>
 
         {/* Navigation */}
@@ -31,9 +29,7 @@ const Header = () => {
               aria-label="Home icon"
             />
 
-            <span className="font-bold text-gray-800">
-              Home
-            </span>
+            <span className="font-bold text-gray-800">Home</span>
           </div>
 
           <div className="flex gap-2 items-center group cursor-pointer">
@@ -43,9 +39,7 @@ const Header = () => {
               aria-label="Services icon"
             />
 
-            <span className="font-bold text-gray-800">
-              Services
-            </span>
+            <span className="font-bold text-gray-800">Services</span>
           </div>
 
           <div className="flex gap-2 items-center group cursor-pointer">
@@ -55,9 +49,7 @@ const Header = () => {
               aria-label="Pricing icon"
             />
 
-            <span className="font-bold text-gray-800">
-              Pricing
-            </span>
+            <span className="font-bold text-gray-800">Pricing</span>
           </div>
 
           <div className="flex gap-2 items-center group cursor-pointer">
@@ -67,16 +59,13 @@ const Header = () => {
               aria-label="Features icon"
             />
 
-            <span className="font-bold text-gray-800">
-              Features
-            </span>
+            <span className="font-bold text-gray-800">Features</span>
           </div>
         </nav>
 
         <a className="bg-neon-yellow text-gray-800 px-4 py-2 rounded-full inline-block transition-transform duration-150 hover:scale-125 cursor-pointer">
           Open Account
         </a>
-
       </div>
     </header>
   );
