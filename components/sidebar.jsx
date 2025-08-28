@@ -30,12 +30,12 @@ const SideBar = () => {
           <div className="flex group">
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <MdOutlineSpeed size={25} />
+              <MdOutlineSpeed size={20} />
             </a>
 
-            <span className="absolute top-[155px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            <span className="absolute top-[120px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 ">
               Dashboard
             </span>
           </div>
@@ -43,12 +43,12 @@ const SideBar = () => {
           <div className="flex group">
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <BsCalendar2Event size={25} />
+              <BsCalendar2Event size={20} />
             </a>
 
-            <span className="absolute top-[240px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            <span className="absolute top-[205px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               History
             </span>
           </div>
@@ -56,12 +56,12 @@ const SideBar = () => {
           <div className="flex group">
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <TbChartBarPopular size={25} />
+              <TbChartBarPopular size={20} />
             </a>
 
-            <span className="absolute top-[325px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            <span className="absolute top-[290px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               Analysis
             </span>
           </div>
@@ -69,12 +69,12 @@ const SideBar = () => {
           <div className="flex group">
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800  w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800  w-[70px] h-[70px]"
             >
-              <RiArrowLeftRightLine size={25} />
+              <RiArrowLeftRightLine size={20} />
             </a>
 
-            <span className="absolute top-[410px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+            <span className="absolute top-[375px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               Finances
             </span>
           </div>
@@ -84,27 +84,27 @@ const SideBar = () => {
           <div>
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <FaRegEnvelope size={25} />
+              <FaRegEnvelope size={20} />
             </a>
           </div>
 
           <div>
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <FaRegFolder size={25} />
+              <FaRegFolder size={20} />
             </a>
           </div>
 
           <div>
             <a
               href="#"
-              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition text-gray-800 w-[70px] h-[70px]"
+              className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
-              <LuBlocks size={25} />
+              <LuBlocks size={20} />
             </a>
           </div>
         </div>
