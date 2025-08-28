@@ -13,7 +13,7 @@ const SideBar = () => {
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="fixed top-22.5 left-0 h-screen bg-white w-30 shadow-lg flex flex-col rounded-[25] border-[2] border-gray-200 items-center ml-5 mt-10">
+      <div className="fixed top-22.5 left-0 h-screen bg-white w-30 shadow-lg flex flex-col rounded-[25] border-[2] border-gray-200 items-center ml-5">
         {/* Logo / Header */}
         <div className="w-[75] h-[80px] border-b-[2.5] border-gray-200 mt-[10px]">
           <Image
@@ -35,7 +35,7 @@ const SideBar = () => {
               <MdOutlineSpeed size={20} />
             </a>
 
-            <span className="absolute top-[120px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 ">
+            <span className="absolute top-[120px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[100px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 ">
               Dashboard
             </span>
           </div>
@@ -48,7 +48,7 @@ const SideBar = () => {
               <BsCalendar2Event size={20} />
             </a>
 
-            <span className="absolute top-[205px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span className="absolute top-[205px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[70px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               History
             </span>
           </div>
@@ -61,7 +61,7 @@ const SideBar = () => {
               <TbChartBarPopular size={20} />
             </a>
 
-            <span className="absolute top-[290px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[80px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span className="absolute top-[290px] left-[100px] text-white bg-gray-800 rounded-[4px] w-[75px] h-[30px] text-center content-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               Analysis
             </span>
           </div>
@@ -105,6 +105,24 @@ const SideBar = () => {
               className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]"
             >
               <LuBlocks size={20} />
+            </a>
+          </div>
+        </div>
+
+        <div className="flex-1">
+          <div>
+            <a 
+            href="#"
+            className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]">
+              <CiGlobe size={20} />
+            </a>
+          </div>
+
+          <div>
+            <a 
+            href="#"
+            className="flex justify-center items-center rounded-md hover:bg-gray-300 transition duration-300 text-gray-800 w-[70px] h-[70px]">
+              <SlSettings size={20} />
             </a>
           </div>
         </div>
